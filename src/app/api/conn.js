@@ -6,7 +6,8 @@ export default function cdb() {
         host: process.env.HOST,
         user: process.env.USER,
         password: process.env.PASS,
-        database: process.env.DBNAME
+        database: process.env.DBNAME,
+        port:2082
     });
 
     con.connect(err => {
