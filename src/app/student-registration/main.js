@@ -21,6 +21,7 @@ export default function Register(){
         })
     },[])
     return(
+        <>
         <apiContext.Provider value={{batches,setBatches}}>
         <loadContext.Provider value={{load,setLoad}}>
         <dataContext.Provider value={{data,setData}}>
@@ -36,5 +37,6 @@ export default function Register(){
         </dataContext.Provider>
         </loadContext.Provider>
         </apiContext.Provider>
+        </>
     )
 }
